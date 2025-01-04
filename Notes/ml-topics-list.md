@@ -1,32 +1,77 @@
 # Comprehensive Machine Learning Topics List
 
 ## 1. Fundamentals
-- Statistical Models
-- Probability Theory
-- Linear Algebra
-- Calculus
-- Information Theory
+- **Statistical Models**
+    - Hypothesis testing
+    - Statistical significance
+    - Confidence intervals
+    - Bayesian statistics
+    - **Distributions:**
+        - Normal (Gaussian) distribution
+        - Binomial distribution
+        - Poisson distribution
+        - Exponential distribution
+        - Uniform distribution
+- **Probability Theory**
+    - Bayes' theorem
+    - Conditional probability
+    - Law of large numbers
+    - Central limit theorem
+- **Linear Algebra**
+    - Eigenvectors and eigenvalues
+    - Matrix decompositions (SVD, QR)
+    - Linear transformations
+- **Calculus**
+    - Multivariate calculus
+    - Partial derivatives
+    - Chain rule
+    - Optimization techniques
+    - Gradient descent
+    - Chain rule (for backpropagation)
+    - Hessian matrix
+- **Information Theory**
 
 ## 2. Classic Machine Learning
-- Supervised Learning
+- **Supervised Learning**
   - Linear Regression
   - Logistic Regression
-  - Decision Trees
+  - **Decision Trees**
+      - CART
+      - ID3
+      - C4.5
   - Random Forests
   - Support Vector Machines (SVM)
   - K-Nearest Neighbors (KNN)
   - Naive Bayes
-- Unsupervised Learning
+  - Bayesian Networks
+  - **Bias-variance tradeoff**
+  - **Overfitting and underfitting**
+  - **Model evaluation metrics**
+      - Accuracy
+      - Precision
+      - Recall
+      - F1-score
+      - ROC curve
+      - AUC
+- **Unsupervised Learning**
   - K-Means Clustering
   - Hierarchical Clustering
   - DBSCAN
   - Gaussian Mixture Models
   - Association Rule Learning
-- Semi-Supervised Learning
-- Ensemble Methods
+  - Principal Component Analysis (PCA) 
+  - Independent Component Analysis (ICA) 
+- **Semi-Supervised Learning**
+- **Ensemble Methods**
   - Bagging
+      - Bootstrapping
   - Boosting (AdaBoost, Gradient Boosting)
   - Stacking
+  - **Cross-validation**
+      - k-fold cross-validation
+      - Stratified k-fold cross-validation
+      - Hold-out validation
+      - Leave-one-out cross-validation
 
 ## 3. Deep Learning
 ### 3.1 Neural Network Basics
@@ -34,7 +79,16 @@
 - Multilayer Perceptrons (MLP)
 - Activation Functions
 - Backpropagation
-- Gradient Descent and its variants
+- **Gradient Descent and its variants**
+    - Batch Gradient Descent
+    - Stochastic Gradient Descent (SGD)
+    - Mini-batch Gradient Descent
+    - Adam
+    - RMSprop
+    - Adagrad
+    - Momentum
+    - Nesterov Accelerated Gradient
+    - **Learning rate scheduling techniques**
 
 ### 3.2 Convolutional Neural Networks (CNN)
 - LeNet
@@ -44,12 +98,21 @@
 - Inception
 - EfficientNet
 - MobileNet
+- **Object Detection**
+    - Faster R-CNN
+    - YOLO (v1-v5)
+    - SSD
+    - Region Proposal Networks (RPN)
 
 ### 3.3 Recurrent Neural Networks (RNN)
 - Simple RNN
 - Long Short-Term Memory (LSTM)
 - Gated Recurrent Unit (GRU)
 - Bidirectional RNN
+- **Applications:**
+    - Time series analysis
+    - Speech recognition
+    - Natural Language Processing
 
 ### 3.4 Transformers and Attention Mechanisms
 - Self-Attention
@@ -60,6 +123,8 @@
 - GPT series
 - T5
 - XLNet
+- Transformer-XL
+- Reformer
 
 ### 3.5 Generative Models
 - Variational Autoencoders (VAE)
@@ -70,11 +135,20 @@
 - Diffusion Models
   - DDPM
   - Stable Diffusion
+- Normalizing Flows
+- Autoregressive Models
 
 ### 3.6 Graph Neural Networks (GNN)
 - Graph Convolutional Networks (GCN)
 - GraphSAGE
 - Graph Attention Networks (GAT)
+- **Applications:**
+    - Social network analysis
+    - Recommendation systems
+    - Drug discovery
+    - Node classification
+    - Link prediction
+    - Graph classification
 
 ## 4. Natural Language Processing (NLP)
 - Tokenization
@@ -85,12 +159,18 @@
 - Machine Translation
 - Text Summarization
 - Question Answering
-- Language Models
+- **Language Models**
+    - LLaMA
+    - PaLM
 - Topic Modeling
+- Syntactic Parsing
+- Dependency Parsing
+- Coreference Resolution
+- Prompt Engineering
 
 ## 5. Computer Vision (CV)
 - Image Classification
-- Object Detection
+- **Object Detection**
   - YOLO (v1-v5)
   - SSD
   - Faster R-CNN
@@ -103,6 +183,10 @@
 - Face Recognition
 - Image Generation
 - Style Transfer
+- **3D Vision**
+    - Depth estimation
+    - Point cloud processing
+    - SLAM (Simultaneous Localization and Mapping)
 
 ## 6. Reinforcement Learning
 - Markov Decision Processes
@@ -113,16 +197,19 @@
 - Proximal Policy Optimization (PPO)
 - Deep Deterministic Policy Gradient (DDPG)
 - Multi-Agent Reinforcement Learning
+- **Types of environments** (deterministic, stochastic, continuous, discrete)
+- **Exploration-exploitation strategies** (epsilon-greedy, softmax)
 
 ## 7. Dimensionality Reduction and Visualization
 - Principal Component Analysis (PCA)
 - t-SNE
 - UMAP
 - Autoencoders
+- Linear Discriminant Analysis (LDA)
 
 ## 8. Model Optimization and Training Techniques
 - Feature Engineering
-- Regularization (L1, L2)
+- **Regularization** (L1, L2)
 - Dropout
 - Batch Normalization
 - Transfer Learning
@@ -132,6 +219,8 @@
 - Hyperparameter Optimization
 - Early Stopping
 - Learning Rate Scheduling
+- **Data augmentation**
+- **Cross-validation strategies** (k-fold, stratified)
 
 ## 9. Explainable AI and Interpretability
 - SHAP (SHapley Additive exPlanations)
@@ -140,6 +229,8 @@
 - Integrated Gradients
 - Feature Importance
 - Partial Dependence Plots
+- Counterfactual explanations
+- Adversarial examples
 
 ## 10. Large Language Models (LLMs)
 - GPT-3, GPT-4
@@ -147,10 +238,12 @@
 - PaLM
 - BLOOM
 - Chinchilla
-- Prompt Engineering
+- **Prompt Engineering**
 - Few-shot Learning
 - Zero-shot Learning
 - In-context Learning
+- Chain-of-thought prompting
+- Retrieval Augmented Generation (RAG) 
 
 ## 11. Multimodal Models
 - CLIP (Contrastive Language-Image Pre-training)
@@ -158,6 +251,10 @@
 - Flamingo
 - VisualBERT
 - VilBERT
+- **Applications:**
+    - Image captioning
+    - Visual question answering
+    - Text-to-image generation
 
 ## 12. Advanced Architectures and Techniques
 - Mixture of Experts (MoE)
@@ -182,6 +279,9 @@
 - TensorFlow Extended (TFX)
 - Apache Airflow
 - Apache Beam
+- Weights & Biases
+- Comet.ml
+- MLRun
 
 ## 14. Frameworks and Tools
 - TensorFlow
@@ -194,6 +294,9 @@
 - ONNX
 - CUDA and CUDA C++
 - JAX
+- spaCy (NLP)
+- NLTK (NLP)
+- OpenCV (Computer Vision)
 
 ## 15. Retrieval-Augmented Generation (RAG)
 - Vector Databases
@@ -202,35 +305,53 @@
 - Context Integration
 
 ## 16. Benchmarking and Evaluation
-- Cross-Validation
-- Holdout Method
-- Metrics for Classification
+- **Metrics for Classification**
   - Accuracy, Precision, Recall, F1-score
   - ROC AUC, PR AUC
-- Metrics for Regression
+  - Confusion Matrix
+- **Metrics for Regression**
   - MSE, RMSE, MAE, R-squared
-- Metrics for Ranking
+- **Metrics for Ranking**
   - NDCG, MRR
-- Metrics for NLP
+- **Metrics for NLP**
   - BLEU, ROUGE, METEOR
-- Metrics for Object Detection
+- **Metrics for Object Detection**
   - mAP, IoU
+- **Metrics for Clustering**
+    - Silhouette Score
+    - Davies-Bouldin Index
+- **Datasets:**
+    - ImageNet (image classification)
+    - GLUE (NLP)
+    - COCO (object detection)
+    - MNIST (handwritten digit recognition)
+    - CIFAR-10/100 (image classification)
 
-## 17. Optimization Algorithms
-- Stochastic Gradient Descent (SGD)
-- Adam
-- RMSprop
-- AdaGrad
-- Momentum
-- Nesterov Accelerated Gradient
+## 17. Loss Functions
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- Cross-entropy loss
+- Hinge loss
+- Huber loss
+- Kullback-Leibler divergence
 
-## 18. Hardware Accelerators
+## 18.  Ranks
+- Rank correlation (Spearman's rank correlation, Kendall's tau)
+- Wilcoxon rank-sum test
+- Mann-Whitney U test
+
+## 19. Similarity Measures
+- Jaccard Index
+- Cosine Similarity
+- Euclidean Distance
+
+## 20. Hardware Accelerators
 - GPUs
 - TPUs
 - FPGAs
 - ASICs
 
-## 19. Ethical AI and Responsible ML
+## 21. Ethical AI and Responsible ML
 - Fairness in ML
 - Privacy-Preserving ML
 - Differential Privacy
@@ -238,10 +359,13 @@
 - Bias Detection and Mitigation
 - Model Robustness and Security
 
-## 20. Emerging Trends
+## 22. Emerging Trends
 - Neuro-Symbolic AI
 - Quantum Machine Learning
 - AI for Scientific Discovery
 - AI in Healthcare
 - AI for Climate Change
 - AI in Robotics
+- AI for cybersecurity
+- Edge AI
+- Explainable reinforcement learning
